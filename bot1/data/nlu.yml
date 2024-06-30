@@ -1,0 +1,166 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - what is your name?
+    - your name?
+    - am I talking to a human?
+
+- intent: thanks
+  examples: |
+    - Thanks
+    - Thank you
+    - Appreciate your help
+
+- intent: college_info
+  examples: |
+    - Can you give me information about [XYZ College]?
+    - What is [ABC University] known for?
+    - Information about the college
+    - college information
+    - college info
+    - info about the college
+    - can I get the information of college?
+
+- intent: admission_info
+  examples: |
+    - How can I apply to [XYZ College]?
+    - What are the admission requirements for [ABC University]?
+    - what is admission process?
+    - what is mode of admission?
+    - mode of admission
+    - can I take offline admission?
+    - Is there Online admission available?
+    - online admission
+    - offline admission
+
+- intent: syllabus_info
+  examples: |
+    - can I get syllabus information?
+    - syllabus details of BVIMIT?
+    - syllabus
+    - Can I get this year's syllabus
+    - BVIMIT syllabus?
+    - can I get the information about the syllabus?
+    - syllabus of BVIMIT
+
+- intent: event_info
+  examples: |
+    - can I get names of events in BVIMIT?
+    - events
+    - events in BVIMIT
+    - can I get event information?
+    - what events are conducted in BVIMIT?
+
+- intent: facilities_info
+  examples: |
+    - facilities provided in BVIMIT?
+    - facilities
+    - what are the facilities in BVIMIT
+    - can I get facilities information?
+    - what facilities are provided to students?
+
+- intent: error_handling
+  examples: |
+    - asdfghjkl
+    - 123456
+    - qwerty
+    - gibberish
+    - unknown input
+    - I don't know what to say
+    - random text
+    - blah blah
+    - something weird
+    - what?
+    - ????
+    - I don't understand
+    - gibberish input
+    - huh?
+
+# Removed some of the intents(Because of some privacy policies)..You Can add Some more intents according to the requirements..

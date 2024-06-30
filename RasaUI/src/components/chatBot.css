@@ -1,0 +1,110 @@
+.circleBtn{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    margin: 5px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.msginp{
+    width: 100%;
+    height: 55px;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border: none;
+    padding-left: 10px;
+}
+
+.cola{
+    height: 65px;
+    width: 65px;
+    padding-left: 0px;
+}
+
+.msgalignend{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; /* Ensures it takes the full width */
+    margin: 10px 0; /* Adds margin for spacing */
+}
+
+.msgalignstart{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%; /* Ensures it takes the full width */
+    margin: 10px 0; /* Adds margin for spacing */
+}
+
+.botmsg{
+    background-color: #99c2ff;
+    padding: 10px 15px;
+    height: auto;
+    min-height: 45px;
+    border-radius: 25px;
+    max-width: 60%; /* Adjusted width to fit within the container */
+    word-wrap: break-word; /* Ensures long words are broken properly */
+}
+
+.usermsg{
+    background-color: #e6f0ff;
+    padding-left: 15px;
+    padding-right: 15px;
+    height:auto;
+    min-height: 45px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    border-radius: 25px;
+    max-width: 20rem;
+}
+
+.botmsg a {
+    color: blue; /* Set link color */
+    text-decoration: underline; /* Underline links */
+    word-wrap: break-word; /* Ensure long URLs are broken properly */
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0047b3;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #000000;
+}
+
+.botIcon{
+    font-size: 45px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.userIcon{
+    font-size: 40px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.sendBtn{
+    font-size: 25px;
+}

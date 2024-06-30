@@ -1,0 +1,152 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: User greets and asks for college information
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: college_info
+    - action: utter_ask_college_info
+
+- story: User asks for course information
+  steps:
+    - intent: courses_info
+    - action: utter_ask_courses_info
+
+- story: User asks for admission information
+  steps:
+    - intent: admission_info
+    - action: utter_ask_admission_info
+
+- story: User expresses thanks
+  steps:
+    - intent: thanks
+    - action: utter_thanks
+
+- story: User ends conversation
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: User asks about syllabus
+  steps:
+    - intent: syllabus_info
+    - action: utter_syllabus
+
+- story: User asks about coc or rules
+  steps:
+    - intent: coc_info
+    - action: utter_coc
+
+- story: User asks about companies or packages
+  steps:
+    - intent: topc_info
+    - action: utter_topc
+
+- story: User asks about events
+  steps:
+    - intent: event_info
+    - action: utter_event
+
+- story: User asks about facilities
+  steps:
+    - intent: facilities_info
+    - action: utter_facilities
+
+- story: error handling path
+  steps:
+  - intent: error_handling
+  - action: utter_error_handling
+
+- story: deny path
+  steps:
+  - intent: deny
+  - action: utter_deny
+
+- story: user asks about fees
+  steps:
+  - intent: ask_fees
+  - action: utter_ask_fees
+
+- story: user asks about documents needed for admission
+  steps:
+  - intent: ask_documents
+  - action: utter_ask_documents
+
+- story: user asks about admission then fees
+  steps:
+  - intent: admission_info
+  - action: utter_ask_admission_info
+  - intent: ask_fees
+  - action: utter_ask_fees
+
+- story: user asks about fees then documents
+  steps:
+  - intent: ask_fees
+  - action: utter_ask_fees
+  - intent: ask_documents
+  - action: utter_ask_documents
+
+- story: user asks about documents then admission
+  steps:
+  - intent: ask_documents
+  - action: utter_ask_documents
+  - intent: admission_info
+  - action: utter_ask_admission_info
+
+- story: user asks about admission, fees and documents
+  steps:
+  - intent: admission_info
+  - action: utter_ask_admission_info
+  - intent: ask_fees
+  - action: utter_ask_fees
+  - intent: ask_documents
+  - action: utter_ask_documents
+
+- story: user asks about fees, documents and admission
+  steps:
+  - intent: ask_fees
+  - action: utter_ask_fees
+  - intent: ask_documents
+  - action: utter_ask_documents
+  - intent: admission_info
+  - action: utter_ask_admission_info
+
+- story: user asks about documents, admission and fees
+  steps:
+  - intent: ask_documents
+  - action: utter_ask_documents
+  - intent: admission_info
+  - action: utter_ask_admission_info
+  - intent: ask_fees
+  - action: utter_ask_fees
+
+# Removed some of the stories(Because of some privacy policies).You can add more stories as per the needs..

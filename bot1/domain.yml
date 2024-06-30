@@ -1,0 +1,98 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - thanks
+  - college_info
+  - courses_info
+  - syllabus_info
+  - error_handling
+# Add all the intents defined in the nlu.yml file
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, My name is BvBot."
+
+  utter_thanks:
+    - text: "You're welcome! If you need further assistance, just let me know."
+    - text: "Welcome.. It's my pleasure.."
+
+  utter_ask_college_info:
+    - text: "During the last 55 years, Bharati Vidyapeeth has made astonishing strides in the field of education, particularly, higher and professional education. Today Bharati Vidyapeeth conducts more than 156 educational units of various kinds, right from pre-primary schools to postgraduate institutions and a full-fledged professional university (BVDU). At Bharati Vidyapeeth, our objective has been to contribute to intellectual awakening and social transformation in different spheres such as education, economic, social & cultural fields in India and more particularly in Maharashtra. Information Technology has invaded our society in a very significant manner. Hence to keep pace with the modern times, the year 2002 marked the establishment of Bharati Vidyapeeth’s Institute of Management & Information Technology. At BVIMIT MCA course, we impart I.T. Management education to meet the demand of the I.T. Industry."
+
+  utter_ask_courses_info:
+    - text: "BVIMIT offers industry-oriented professional program in MCA with the lowest course fee as compared to other universities in the region. For more information visit our <a href='https://bvimit.co.in/bvimit/course_mca.php'>official site</a>."
+
+  utter_syllabus:
+    - text: "The syllabus for the MCA degree for both year are : <a href='https://bvimit.co.in/bvimit/pdf/MCAsyllabus%20AC20-21UOM.pdf'>MCA Syllabus</a>"
+
+  utter_coc:
+    - text: "<a href='https://bvimit.co.in/bvimit/pdf/code%20of%20conducts-converted%20(1).pdf'>Code of Conduct</a> visit this link for Code of conduct"
+
+  utter_topc:
+    - text: "Carwala.com - 9LPA <br>Josh Technologies- 8.70LPA <br>BANK OF AMERICA- 6.45LPA <br>BNP- 6LPA <br>PRINCETON BLUE- 6.25LPA <br>ZEUS LEARNING- 7.5LPA <br>V2S Technology- 4.20 LPA <br>CRM NEXT- 4.5LPA <br>Finovate- 4.5LPA <br>IDBI Intech 3.25 - 4.5LPA"
+
+  utter_event:
+    - text: "Yes there are several events such as:<br><a href='https://bvimit.co.in/bvimit/events_seminars.php'> -> Seminars</a>,<br><a href='https://bvimit.co.in/bvimit/events_workshops.php'> -> Workshops</a>, <br><a href='https://bvimit.co.in/bvimit/pdf/ICET%202022-CONFERENCE%20REPORT.pdf'> ->ICET-2022</a>, <br><a href='https://bvimit.co.in/bvimit/manthan2022.php'> -> MANTHAN 2022</a>"
+
+  utter_facilities:
+    - text: "There are several facilities such as:<br>1. CANTEEN <br>2. HOSTEL <br>3. LIBRARY <br>4. SPORTS"
+
+  utter_error_handling:
+    - text: "I'm sorry, I didn't understand that. Could you please rephrase your query or ask something else?"
+
+  utter_deny:
+    - text: "No problem. Let me know if you need anything else."
+# Removed some of the responses(Because of some privacy policies).add as many responses as no. of intents
+
+entities:
+  - college_name
+  - course_name
+  - program_name
+  - qualification
+  - department_name
+  - faculty_name
+  - company_name
+  - event_name
+
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_thanks
+  - utter_ask_college_info
+  - utter_ask_courses_info
+  - utter_syllabus
+  - utter_coc
+  - utter_topc
+  - utter_event
+  - utter_facilities
+  - utter_error_handling
+  - utter_deny
+#add all the utter responses
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
